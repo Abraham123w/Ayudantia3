@@ -12,9 +12,11 @@ public class Partida {
     }
 
     public void EnfrentarMountros() {
+
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
-        int opcion = rand.nextInt(3) + 1;
+       // int opcion = rand.nextInt(3) + 1;
+        int opcion =1;
         int opcion1;
         Jugador jugador = new Jugador(120,"0");
         Vampiro enemigo1 = new Vampiro(120,120,2);
@@ -25,7 +27,7 @@ public class Partida {
 
         switch (opcion) {
             case 1:
-                Jugador jugador = new Jugador(120,"100");
+                Jugador jugador1 = new Jugador(120,"100");
                 enemigo1 = new Vampiro(120,120,2);
                 zombie = new Zombie(120,40,"saltador");
                 jefeFinal = new JefeFinal(120,40);
